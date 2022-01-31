@@ -12,12 +12,13 @@
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail"
   },
-  "proxy": "http://localhost:3001",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.2"
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
